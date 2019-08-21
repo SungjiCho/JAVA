@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var a = 3; //정수
+        var b = 3.7;  //실수
+        var c = 'a';  //문자
+        var d = "abcd";  //문자열
+
+        var e;  //아무 값도 넣지 않았을 때 공간을 얼마나 챙김?
+        e = 3;
+
+        var x = 3;
+        var x = new Number(3);
+
+        var y = 4;
+        var z;  //이름은 있으나, 아직 객체를 할당하지 않은 상태
+        z = 3;
+
+        alert(typeof z);
+
+        var nums = new Array();
+        var nums = new Array(5);
+        var nums = new Array(5, 10, 21);
+        var nums = new Array(5, 10, 21, "hello");
+
+        alert(typeof nums[4]);
+
+        var nums = new Array(5, 10, 21, "hello", new Array(2, 3, 4));
+
+        alert(num[4][1]);
+
+        nums.splice(1);
+        nums.splice(1, 1);
+
+        nums.splie(2, 0, "hoho");
+
+        var exam = new Object();
+        exam.kor = 40;
+        exam.eng = 70;
+        exam.math = 80;
+
+        alert(exam.kor + exam.eng);
+
+        var key = "kor";  //키를 이용한 데이터 관리 Object 지원
+        exam["kor"] = 30;
+        exam[key] = 30;     
+        alert(exam["kor"]);
+
+        var exam = {"kor" : 30, "eng" : 70, "math":80};
+        var notice = {"id":1, "title":"hello"};
+        console.log(notice.title);
+
+        var notice = '{"id":1, "title":"hello"}'
+    </script>
+</body>
+</html>
