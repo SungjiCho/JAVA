@@ -2,27 +2,3 @@ GET https://api.github.com/orgs/octokit/repos
 Accept: application/vnd.github.VERSION.html+json
 Content-Type: application/json
 User-Agent: rest-client
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
