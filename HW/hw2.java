@@ -1,4 +1,4 @@
-package HW;
+package Hw;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ public class hw1 {
 		}else if(opt1 == 3) {
 			System.out.println("미생 시뮬레이션을 종료합니다.");
 			System.exit(0);
-		}else {
+		}else if(opt1 != 1){
 			System.out.println("잘못 입력하셨습니다.");
 			System.out.println("인생의 두 번의 기회는 잘 오지 않습니다.");
 			System.out.println("아쉽지만 다음 기회에 만나요.");
@@ -57,19 +57,15 @@ public class hw1 {
 			System.out.println("프로 바둑기사 입단이 좌절된 후 고졸학력으로 원인터네셔널에 인턴으로 입사해 우여곡절을 겪게됩니다.");
 			System.out.println("*안영이: 자원2팀 정사원");
 			System.out.println("유일한 여자 신입사원으로 모든 부분에서 완벽한 실력자지만 찌질한 상관들 밑에서 일하면서 속앓이를 하게 됩니다.");
-			System.out.println("*장백기: 철강1팀 정사원");
-			System.out.println("엘리트 사원으로 완벽한 입사스펙을 갖추기 위해 오랫동안 준비해온 취업준비생의 전형입니다.");
-			System.out.println("*한석율: 섬유1팀 정사원");
-			System.out.println("현실 세계에 들어온 이상주의자로 현장을 우선 중시하는 마인드를 가지고 있습니다.");
 				
 			System.out.println("자, 그럼 캐릭터를 결정해 볼까요?");
 		}
 			
 		System.out.println("다음 캐릭터 중 한 명을 선택해주세요.");
-		System.out.println("(1)장그래\n (2)안영이\n (3)장백기\n (4)한석율");
+		System.out.println("(1)장그래\n (2)안영이");
 		System.out.print("입력: "); int opt2 = stdIn.nextInt();
 			
-		if(opt2 < 1 || opt2 > 4) {
+		if(opt2 != 1 && opt2 != 2) {
 			System.out.println("마음에 드는 캐릭터가 없으신가요? 캐릭터 선정에 실패하였습니다.");
 			System.out.println("아쉽지만 인생의 결정을 여러 차례 번복하기는 어렵죠.");
 			System.out.println("본 시뮬레이션에서는 자동으로 미생 원작의 주인공인 장그래로 결정됩니다.");
